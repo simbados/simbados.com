@@ -13,8 +13,11 @@ body, html {
     --accent-bg-color: rgb(63, 93, 63, 0.5);
     --black: #1a1a1a;
     --white: #bdbdbd;
-    --background-light: linear-gradient(to bottom, rgb(246, 252, 246), rgb(230, 234, 230));
-    --background-dark: linear-gradient(to bottom, rgb(48, 51, 48), rgb(55, 58, 55));
+    --starting-bg-light: rgb(247, 252, 247);
+    --starting-bg-dark: rgb(66, 70, 66);
+    --navbar-bg: var(--starting-bg-light);
+    --background-light: linear-gradient(to bottom, var(--starting-bg-light), rgb(207, 220, 207));
+    --background-dark: linear-gradient(to bottom, var(--starting-bg-dark), rgb(55, 58, 55));
     --main-color: #fff;
     --navbar-height: 3em;
 }
@@ -54,7 +57,7 @@ a:hover {
 
 .navbar {
     align-items: center;
-    background: var(--background-color);
+    background: var(--navbar-bg);
     border-bottom: 2px solid var(--accent-color);
     display: flex;
     flex-shrink: 0;

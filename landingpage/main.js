@@ -7,9 +7,11 @@ let backgroundLight = getComputedStyle(document.documentElement).getPropertyValu
 if (darkModeStorage === 'true') {
     document.documentElement.style.setProperty('--main-color', black);
     document.documentElement.style.setProperty('--background-color', backgroundLight);
+    document.documentElement.style.setProperty('--navbar-bg', 'var(--starting-bg-light)');
 } else {
     document.documentElement.style.setProperty('--main-color', white);
     document.documentElement.style.setProperty('--background-color', backgroundDark);
+    document.documentElement.style.setProperty('--navbar-bg', 'var(--starting-bg-dark)');
 }
 document.addEventListener('DOMContentLoaded', (event) => {
     let darkModeSwitch = document.getElementById('dark-mode-toggle');
@@ -32,11 +34,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function setDarkMode() {
         document.documentElement.style.setProperty('--main-color', black);
         document.documentElement.style.setProperty('--background-color', backgroundLight);
+        document.documentElement.style.setProperty('--navbar-bg', 'var(--starting-bg-light)');
         darkModeSwitch.textContent = 'Dark Mode';
     }
     function setLightMode() {
         document.documentElement.style.setProperty('--main-color', white);
         document.documentElement.style.setProperty('--background-color', backgroundDark);
+        document.documentElement.style.setProperty('--navbar-bg', 'var(--starting-bg-dark)');
         darkModeSwitch.textContent = 'Light Mode';
     }
     document.getElementById('scroll-top')?.addEventListener('click', () => {
