@@ -141,44 +141,50 @@ a:hover {
 
 .skill-ts {
     position: absolute;
-    left: 15%;
-    top: 35%;
+    left: 22%;
+    top: 37.5%;
 }
 
 .skill-vue {
     position: absolute;
-    left: 7%;
-    top: 55%;
+    left: 12%;
+    top: 62.5%;
 }
 
 .skill-nuxt {
     position: absolute;
     left: 25%;
-    top: 75%;
+    top: 82%;
+}
+
+.skill-express {
+    position: absolute;
+    left: 47%;
+    top: 70%;
 }
 
 .skill-docker {
     position: absolute;
     right: 20%;
-    top: 85%;
+    top: 80%;
 }
 
 .skill-angular {
     position: absolute;
-    right: 13%;
-    top: 60%;
+    right: 10%;
+    top: 55%;
 }
 
 .skill-go {
     position: absolute;
-    right: 7%;
-    top: 33%;
+    right: 45%;
+    top: 15%;
 }
 
 .skill-java {
     position: absolute;
-    right: 35%;
-    top: 12%;
+    right: 20%;
+    top: 25%;
 }
 
 @keyframes fade-in-1 {
@@ -434,5 +440,59 @@ footer-component {
     .welcome-mobile {
         top: 15%;
         font-size: 0.5em;
+    }
+
+    .skill-node {
+        position: absolute;
+        left: 10%;
+        top: 15%;
+    }
+
+    .skill-ts {
+        position: absolute;
+        left: 18%;
+        top: 30%;
+    }
+
+    .skill-vue {
+        position: absolute;
+        left: 12%;
+        top: 58%;
+    }
+
+    .skill-nuxt {
+        position: absolute;
+        left: 25%;
+        top: 85%;
+    }
+
+    .skill-express {
+        position: absolute;
+        left: 35%;
+        top: 70%;
+    }
+
+    .skill-docker {
+        position: absolute;
+        right: 15%;
+        top: 82%;
+    }
+
+    .skill-angular {
+        position: absolute;
+        right: 10%;
+        top: 60%;
+    }
+
+    .skill-go {
+        position: absolute;
+        right: 20%;
+        top: 20%;
+    }
+
+    .skill-java {
+        position: absolute;
+        right: 16%;
+        top: 33%;
     }
 }
