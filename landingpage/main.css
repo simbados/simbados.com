@@ -4,6 +4,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -83,7 +84,7 @@ a:hover {
 }
 
 .contact-position {
-    left: 30%;
+    left: calc(50vw - 6em);
     top: 40%;
 }
 
@@ -117,11 +118,11 @@ a:hover {
     margin-top: 1em;
 }
 
-.intro-message-active::after,
-.project-message-intro-active::after,
-.project-message-js-active::after,
-.project-message-others-active::after,
-.contact-message-active::after {
+.mt-05 {
+    margin-top: 0.5em;
+}
+
+.message-active::after {
     content: ' ';
     display: inline-block;
     width: 0;
@@ -129,18 +130,24 @@ a:hover {
     animation: blink 0.8s infinite;
 }
 
+.project-header {
+    font-size: 1.3em;
+}
+
 .project-element {
     animation: fade-in-1 1s;
     box-sizing: border-box;
-    font-size: 0.8em;
+    font-size: 0.7em;
     display: none;
-    margin: 0.5em 0 0 1em;
+    position: relative;
+    margin-top: 0.5em;
     height: fit-content;
+    width: 100%;
 
     a {
         background-color: var(--accent-bg-color);
         border: 2px solid var(--accent-color);
-        border-radius: 0.1em;
+        border-radius: 0.3em;
         display: inline-block;
         padding: 0.2em;
         text-decoration: none;
@@ -150,6 +157,20 @@ a:hover {
         word-break: break-word;
         white-space: pre-wrap;
     }
+}
+
+.project-description {
+    margin-top: 0.2em;
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.divider {
+    animation: fade-in-1 1s;
+    display: none;
+    border-top: 1px solid var(--accent-color);
+    width: 90vw;
+    margin: 0.5em 0;
 }
 
 .skill-screen,
@@ -503,8 +524,7 @@ footer-component {
     }
 
     .contact-position {
-        left: 15%;
-        top: 45%;
+        top: 40%;
     }
 
     .welcome-mobile {
@@ -572,5 +592,9 @@ footer-component {
 
     .project-element {
         font-size: 0.5em;
+    }
+
+    .project-header {
+        font-size: 0.7em;
     }
 }

@@ -113,42 +113,43 @@ document.addEventListener('DOMContentLoaded', (event) => {
             if (runProjectSection) {
                 runProjectSection = false;
                 setTimeout(async () => {
-                    el.querySelector('#project-message-intro').classList.add('project-message-intro-active');
-                    await typeText(el.querySelector('#project-message-intro'), 'Current projects:\n\nGolang:')
-                    el.querySelector('#project-message-intro').classList.remove('project-message-intro-active')
-                    el.querySelector('#project-agey').style.display = 'block';
+                    const display = 'block';
+                    const header = el.querySelector('#project-message-header');
+                    await typeText(header, 'Current projects:')
+                    await typeText(el.querySelector('#project-message-go'), 'Golang:')
+                    el.querySelector('#project-agey').style.display = display;
+                    await typeText(el.querySelector('#agey-desc'), 'Yubikey and age plugin convenience wrapper', 40)
                     await wait(500);
-                    el.querySelector('#project-sb').style.display = 'block';
+                    el.querySelector('#project-sb').style.display = display;
+                    await typeText(el.querySelector('#sb-desc'), 'Sandbox wrapper for Macos', 40)
                     await wait(500);
-                    el.querySelector('#project-message-js').classList.add('project-message-js-active');
+                    el.querySelector('#divider-go').style.display = display;
                     await typeText(el.querySelector('#project-message-js'), 'Javascript:')
-                    el.querySelector('#project-message-js').classList.remove('project-message-js-active');
-                    el.querySelector('#project-website').style.display = 'block';
+                    el.querySelector('#project-website').style.display = display;
+                    await typeText(el.querySelector('#website-desc'), 'What you are seeing right now', 40)
+                    el.querySelector('#divider-js').style.display = display;
                     await wait(500);
-                    el.querySelector('#project-message-others').classList.add('project-message-others-active');
                     await typeText(el.querySelector('#project-message-others'), 'Others:')
-                    el.querySelector('#project-message-others').classList.remove('project-message-others-active');
-                    el.querySelector('#project-katas').style.display = 'block';
+                    el.querySelector('#project-katas').style.display = display;
+                    await typeText(el.querySelector('#katas-desc'), 'My training katas', 40)
                 }, 50);
             }
         },
     });
 
 
-    async function typeText(el, text, newText = true) {
+    async function typeText(el, text, ms= 50) {
         let index = 0;
-
-        if (newText) {
-            el.textContent = '';
-        }
+        el.classList.add('message-active');
         return new Promise((resolve) => {
             function type() {
                 el.textContent += text[index];
                 index++;
 
                 if (index < text.length) {
-                    setTimeout(type, 50);
+                    setTimeout(type, ms);
                 } else if (index === text.length) {
+                    el.classList.remove('message-active');
                     resolve();
                 }
             }
