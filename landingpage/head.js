@@ -6,7 +6,7 @@ document.write(`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="no-referrer">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.png" type="image/png">
     <meta property="og:title" content="Simbados Home">
     <meta property="og:description" content="Simbados Website and blog">
     <meta property="og:url" content="https://simbados.com">
