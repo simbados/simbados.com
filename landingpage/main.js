@@ -118,27 +118,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     await typeText(header, 'Current projects:')
                     await typeText(el.querySelector('#project-message-go'), 'Golang:')
                     el.querySelector('#project-agey').style.display = display;
-                    await typeText(el.querySelector('#agey-desc'), 'Yubikey and age plugin convenience wrapper', 40)
+                    await typeText(el.querySelector('#agey-desc'), 'Yubikey and age plugin convenience wrapper')
                     await wait(500);
                     el.querySelector('#project-sb').style.display = display;
-                    await typeText(el.querySelector('#sb-desc'), 'Sandbox wrapper for Macos', 40)
+                    await typeText(el.querySelector('#sb-desc'), 'Sandbox wrapper for Macos')
                     await wait(500);
                     el.querySelector('#divider-go').style.display = display;
                     await typeText(el.querySelector('#project-message-js'), 'Javascript:')
                     el.querySelector('#project-website').style.display = display;
-                    await typeText(el.querySelector('#website-desc'), 'What you are seeing right now', 40)
+                    await typeText(el.querySelector('#website-desc'), 'What you are seeing right now')
                     el.querySelector('#divider-js').style.display = display;
                     await wait(500);
                     await typeText(el.querySelector('#project-message-others'), 'Others:')
                     el.querySelector('#project-katas').style.display = display;
-                    await typeText(el.querySelector('#katas-desc'), 'My training katas', 40)
+                    await typeText(el.querySelector('#katas-desc'), 'My training katas')
                 }, 50);
             }
         },
     });
 
 
-    async function typeText(el, text, ms= 50) {
+    async function typeText(el, text, ms= 25) {
         let index = 0;
         el.classList.add('message-active');
         return new Promise((resolve) => {
