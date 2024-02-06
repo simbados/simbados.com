@@ -17,8 +17,8 @@ body, html {
     --starting-bg-light: rgb(247, 252, 247);
     --starting-bg-dark: rgb(80, 91, 80);
     --navbar-bg: var(--starting-bg-light);
-    --background-light: linear-gradient(to bottom, var(--starting-bg-light), rgb(180, 220, 180));
-    --background-dark: linear-gradient(to bottom, var(--starting-bg-dark), rgb(53, 59, 53));
+    --background-light: linear-gradient(150deg, var(--starting-bg-light), rgb(193, 222, 193));
+    --background-dark: linear-gradient(150deg, var(--starting-bg-dark), rgb(53, 59, 53));
     --main-color: #fff;
     --navbar-height: 3em;
 }
@@ -209,7 +209,7 @@ a:hover {
 }
 
 .skill-element {
-    border: 2px solid var(--accent-color);
+    border: 3px solid var(--accent-color);
     border-radius: 1em;
     font-size: 0.7em;
     padding: 0.4em;
