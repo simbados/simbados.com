@@ -117,18 +117,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     const header = el.querySelector('#project-message-header');
                     await typeText(header, 'Current projects:')
                     await typeText(el.querySelector('#project-message-go'), 'Golang:')
-                    el.querySelector('#project-agey').style.display = display;
-                    await typeText(el.querySelector('#agey-desc'), 'Yubikey and age plugin convenience wrapper')
-                    await wait(500);
+                    await wait(200);
                     el.querySelector('#project-sb').style.display = display;
                     await typeText(el.querySelector('#sb-desc'), 'Sandbox wrapper for Macos')
-                    await wait(500);
+                    await wait(200);
                     el.querySelector('#divider-go').style.display = display;
                     await typeText(el.querySelector('#project-message-js'), 'Javascript:')
+                    el.querySelector('#project-comparison').style.display = display;
+                    await typeText(el.querySelector('#comparison-desc'), 'Compare different finance options for cars')
                     el.querySelector('#project-website').style.display = display;
                     await typeText(el.querySelector('#website-desc'), 'What you are seeing right now')
                     el.querySelector('#divider-js').style.display = display;
-                    await wait(500);
+                    await wait(200);
                     await typeText(el.querySelector('#project-message-others'), 'Others:')
                     el.querySelector('#project-katas').style.display = display;
                     await typeText(el.querySelector('#katas-desc'), 'My training katas')
