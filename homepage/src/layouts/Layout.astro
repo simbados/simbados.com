@@ -1,0 +1,72 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta name="Website">
+		<meta name="description" content="My personal website and blog"/>
+		<meta name="robots" content="index, follow">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="referrer" content="no-referrer">
+		<meta property="og:title" content="Simbados Home">
+		<meta property="og:description" content="Simbados Website and blog">
+		<meta property="og:url" content="https://simbados.com">
+		<meta charset="UTF-8" />
+		<link rel="icon" href="/favicon.png" type="image/png">
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--background-color: #fff;
+		--accent-color: rgb(44, 65, 44);
+		--accent-bg-color: rgb(63, 93, 63, 0.5);
+		--black: #1a1a1a;
+		--white: #bdbdbd;
+		--starting-bg-light: rgb(247, 252, 247);
+		--starting-bg-dark: rgb(80, 91, 80);
+		--navbar-bg: var(--starting-bg-light);
+		--background-light: linear-gradient(150deg, var(--starting-bg-light), rgb(193, 222, 193));
+		--background-dark: linear-gradient(150deg, var(--starting-bg-dark), rgb(53, 59, 53));
+		--main-color: #fff;
+		--navbar-height: 3em;
+	}
+	body, html {
+		color: var(--main-color);
+		font-family: 'Courier New', monospace;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		overflow-x: hidden;
+		scroll-behavior: smooth;
+	}
+	a {
+		color: var(--main-color);
+		word-break: break-all;
+	}
+	a:hover {
+		color: var(--accent-color);
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>

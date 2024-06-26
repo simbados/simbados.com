@@ -1,0 +1,81 @@
+---
+interface Props {
+    title: string;
+}
+
+---
+<header class="navbar">
+    <div id="home" class="navbar__title">
+        <a href="/">Simbados</a>
+    </div>
+    <div class="navbar__right">
+        <div class="github-acc">
+            <img src="/github-mark.png" alt="github logo" />
+            <a href="https://github.com/simbados" rel="noreferrer"></a>
+        </div>
+        <div id="dark-mode-toggle" class="mode-toggle">Light Mode</div>
+    </div>
+</header>`
+
+<style>
+    .mode-toggle {
+        border-radius: 5%;
+        border: 1px solid;
+        cursor: pointer;
+        font-size: 12px;
+        margin: 0 2em;
+        padding: 0.5em;
+    }
+
+    .mode-toggle:hover {
+        background-color: var(--accent-color);
+        color: var(--main-color);
+    }
+
+    .navbar {
+        align-items: center;
+        background: var(--navbar-bg);
+        border-bottom: 2px solid var(--accent-color);
+        display: flex;
+        flex-shrink: 0;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        position: fixed;
+        height: var(--navbar-height);
+        justify-content: space-between;
+        z-index: 5;
+    }
+    .navbar__right {
+        align-items: center;
+        display: flex;
+    }
+    .navbar__title {
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0 2.5em;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .github-acc {
+        height: 24px;
+        width: 24px;
+        position: relative;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
+
+        a {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+</style>
