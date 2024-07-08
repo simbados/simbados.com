@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', (_event) => {
     function addObserver(el: HTMLElement, options: IntersectionObserverInit & { cb: (el: HTMLElement) => void }) {
-        const observer = new IntersectionObserver(function (entries, observer) {
+        const observer = new IntersectionObserver(function (entries, _observer) {
             entries.forEach(entry => {
                 if (entry.isIntersecting && options.cb) {
                     options.cb(el);

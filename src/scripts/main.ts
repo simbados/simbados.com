@@ -17,7 +17,7 @@ if (darkModeStorage === 'true') {
 } else {
     setLightMode(switchButton)
 }
-document.addEventListener('DOMContentLoaded', (event) => {
+document.addEventListener('DOMContentLoaded', (_event) => {
     document.getElementById('scroll-top')?.addEventListener('click', () => {
         window.scrollTo(0, 0);
     })
