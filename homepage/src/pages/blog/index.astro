@@ -1,0 +1,33 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Blog">
+    <div class="flex flex-col items-center">
+        <div class="text-xl font-bold my-2">Recent posts</div>
+        <div class="my-4 flex flex-col items-center p-2 rounded-xl">
+            <div class="font-bold mb-2">2022</div>
+            <div class="font-semibold mt-2">April</div>
+            <a class="hover:text-accentColor my-2"
+               href="/blog/posts/misc/2022-03-24-navigating-life-without-expert-knowledge">
+                Navigating life without expert knowledge
+            </a>
+            <div class="font-semibold mt-2">March</div>
+            <a class="hover:text-accentColor my-2" href="/blog/posts/misc/2022-03-01-values-without-religion">Values
+                without
+                religion</a>
+            <div class="font-semibold mt-2">February</div>
+            <a class="hover:text-accentColor my-2" href="/blog/posts/misc/2022-02-01-free-will">Free will</a>
+            <div class="font-semibold mt-2">January</div>
+            <a class="hover:text-accentColor my-2" href="/blog/posts/misc/2022-01-27-toxic-coworkers">Toxic
+                coworkers</a>
+        </div>
+        <div class="h-0.5 w-full bg-accentColor"></div>
+        <div class="my-4 flex flex-col items-center p-2 rounded-xl">
+            <div class="font-bold mb-2">2021</div>
+            <div class="font-semibold mt-2">January</div>
+            <a class="hover:text-accentColor my-2" href="/blog/posts/misc/2021-01-03-veganism">A case for
+                veganism</a>
+        </div>
+    </div>
+</Layout>
