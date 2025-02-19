@@ -1,10 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Landing Page">
     <div class="welcome-screen" id="welcome-id">
-        <div id="welcome-message-id" class="message intro-message-active welcome-mobile"></div>
+        <div
+            id="welcome-message-id"
+            class="message intro-message-active welcome-mobile"
+        >
+        </div>
         <div class="arrow-group-left">
             <div class="arrow-down arrow-down-1"></div>
             <div class="arrow-down arrow-down-2"></div>
@@ -17,7 +21,8 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </div>
     <div id="projects" class="project-section">
-        <div id="project-message-header" class="project-message project-header"></div>
+        <div id="project-message-header" class="project-message project-header">
+        </div>
         <div id="project-message-go" class="project-message mt-05"></div>
         <div id="project-sb" class="project-element">
             <a rel="noreferrer" href="https://github.com/simbados/sb">Sb</a>
@@ -26,18 +31,26 @@ import Layout from '../layouts/Layout.astro';
         <div id="divider-go" class="divider"></div>
         <div id="project-message-js" class="project-message"></div>
         <div id="project-comparison" class="project-element">
-            <a rel="noreferrer" href="https://github.com/simbados/comparison">Comparison</a>
+            <a rel="noreferrer" href="https://github.com/simbados/comparison"
+                >Comparison</a
+            >
             <div id="comparison-desc" class="project-description"></div>
         </div>
         <div id="project-website" class="project-element">
-            <a rel="noreferrer" href="https://github.com/simbados/simbados.com">Website</a>
+            <a rel="noreferrer" href="https://github.com/simbados/simbados.com"
+                >Website</a
+            >
             <div id="website-desc" class="project-description"></div>
         </div>
         <div id="divider-js" class="divider"></div>
         <div id="project-message-others" class="project-message"></div>
         <div id="project-katas" class="project-element">
-            <a rel="noreferrer" href="https://github.com/simbados/katas">Katas</a>
-            <a rel="noreferrer" href="https://github.com/simbados/leetcode150">Leetcode</a>
+            <a rel="noreferrer" href="https://github.com/simbados/katas"
+                >Katas</a
+            >
+            <a rel="noreferrer" href="https://github.com/simbados/leetcode150"
+                >Leetcode</a
+            >
             <div id="katas-desc" class="project-description"></div>
         </div>
     </div>
@@ -56,7 +69,11 @@ import Layout from '../layouts/Layout.astro';
         </div>
     </div>
     <div id="contact" class="contact-screen">
-        <div id="contact-message-id" class="message contact-message-active contact-position"></div>
+        <div
+            id="contact-message-id"
+            class="message contact-message-active contact-position"
+        >
+        </div>
     </div>
 </Layout>
 <script src="../scripts/index.ts"></script>
@@ -72,7 +89,7 @@ import Layout from '../layouts/Layout.astro';
     }
 
     .message {
-        font-family: 'Courier New', monospace;
+        font-family: "Courier New", monospace;
         text-align: left;
         white-space: pre-wrap;
         font-size: 1em;
@@ -123,7 +140,7 @@ import Layout from '../layouts/Layout.astro';
     }
 
     .message-active::after {
-        content: ' ';
+        content: " ";
         display: inline-block;
         width: 0;
         border-right: 2px solid #000;
@@ -194,7 +211,6 @@ import Layout from '../layouts/Layout.astro';
     .skill-content {
         display: none;
     }
-
 
     .skill-button {
         animation: fade-in-1 1s;
@@ -412,7 +428,8 @@ import Layout from '../layouts/Layout.astro';
     }
 
     @keyframes blink {
-        0%, 100% {
+        0%,
+        100% {
             border-color: transparent;
         }
         50% {
