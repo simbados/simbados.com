@@ -285,6 +285,24 @@ section:last-child { border-bottom: none; }
   transform: translateX(3px);
 }
 
+.project-links {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+a.project-arrow {
+  text-decoration: none;
+}
+
+a.project-arrow:hover {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
 /* ── Skills ── */
 .skills-grid {
   display: grid;
